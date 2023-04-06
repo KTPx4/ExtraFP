@@ -1,0 +1,11 @@
+D:\Px4_TDTU\TDTU\2HK2\CNPM\LT\QT1\ExtraFP\Ex1\frmMain\Ex1\bin\Debug\Ex1.exe.config
+D:\Px4_TDTU\TDTU\2HK2\CNPM\LT\QT1\ExtraFP\Ex1\frmMain\Ex1\bin\Debug\Ex1.exe
+D:\Px4_TDTU\TDTU\2HK2\CNPM\LT\QT1\ExtraFP\Ex1\frmMain\Ex1\bin\Debug\Ex1.pdb
+D:\Px4_TDTU\TDTU\2HK2\CNPM\LT\QT1\ExtraFP\Ex1\frmMain\Ex1\obj\Debug\Ex1.csproj.AssemblyReference.cache
+D:\Px4_TDTU\TDTU\2HK2\CNPM\LT\QT1\ExtraFP\Ex1\frmMain\Ex1\obj\Debug\Ex1.csproj.SuggestedBindingRedirects.cache
+D:\Px4_TDTU\TDTU\2HK2\CNPM\LT\QT1\ExtraFP\Ex1\frmMain\Ex1\obj\Debug\Ex1.frmLogin.resources
+D:\Px4_TDTU\TDTU\2HK2\CNPM\LT\QT1\ExtraFP\Ex1\frmMain\Ex1\obj\Debug\Ex1.Properties.Resources.resources
+D:\Px4_TDTU\TDTU\2HK2\CNPM\LT\QT1\ExtraFP\Ex1\frmMain\Ex1\obj\Debug\Ex1.csproj.GenerateResource.cache
+D:\Px4_TDTU\TDTU\2HK2\CNPM\LT\QT1\ExtraFP\Ex1\frmMain\Ex1\obj\Debug\Ex1.csproj.CoreCompileInputs.cache
+D:\Px4_TDTU\TDTU\2HK2\CNPM\LT\QT1\ExtraFP\Ex1\frmMain\Ex1\obj\Debug\Ex1.exe
+D:\Px4_TDTU\TDTU\2HK2\CNPM\LT\QT1\ExtraFP\Ex1\frmMain\Ex1\obj\Debug\Ex1.pdb
