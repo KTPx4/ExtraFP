@@ -145,9 +145,13 @@ namespace Ex1
             else
             {
                 MessageBox.Show("Welcom '" + tb.Rows[0][0] + "'");
-                this.DialogResult = DialogResult.OK;
-
-                this.Close();
+                //this.DialogResult = DialogResult.OK;
+                frmMain main = new frmMain();
+                //main.Show()
+                this.Hide(); //Hide current form.
+                main.ShowDialog(); //Display the next form window
+                this.Close(); //While closing the NextForm, control will come again and will close this form as well
+              
             }
         }
 

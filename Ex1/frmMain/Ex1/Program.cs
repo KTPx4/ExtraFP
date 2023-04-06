@@ -22,9 +22,17 @@ namespace Ex1
                 return false;
             }
 
-            string serverName = File.ReadAllText(path);
+            string text = File.ReadAllText(path);
+            string[] arr = text.Split('|');
+            if(arr.Length != 2 )
+            {
+                return false;
+            }
+            string serverName = arr[0];
+            string dbName = arr[1];
 
             strConn = strConn.Replace("(local)", serverName);
+            strConn = strConn.Replace("(db)", dbName);
             return true;
         }
         [STAThread]
