@@ -1,0 +1,5 @@
+- Khi đại lí đặt mua hàng trên form, sẽ bao gồm IDItem, số lượng, giá. (cho phép add thêm nhiều list item)
+- Sau khi hoàn tất(nhấn đặt hàng) trên winform 
+	[Order] : tạo 1 Data rows 
+			
+	[OrderDetail]: Nhiều data rows dựa theo số lượng item đã add, (chung một mã Order)
