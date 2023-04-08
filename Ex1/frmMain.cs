@@ -28,7 +28,7 @@ namespace Ex1
                     Mdi.BackColor = System.Drawing.Color.White;
               
                 }
-                catch (Exception a)
+                catch (Exception e)
                 {
                 }
             }
@@ -37,17 +37,31 @@ namespace Ex1
         {
             Style();
         }
+
         private void callManagement(int tab)
         {
+            int check = 0;
             foreach (Form c in this.MdiChildren)
             {
-                c.Close();
-            }
+                if(c is frmManagement)
+                {
+                    ((frmManagement)c).showTab(tab);
+                    ((frmManagement)c).tab = tab;
+                    check = 1;
+                }
+                else
+                {
+                    c.Close();
+                }
 
-            frmManagement f = new frmManagement(tab);
-            f.MdiParent = this;
-            f.Dock = DockStyle.Fill;
-            f.Show();
+            }
+            if(check == 0)
+            {
+                frmManagement f = new frmManagement(tab);
+                f.MdiParent = this;
+                f.Dock = DockStyle.Fill;
+                f.Show();
+            }
         }
         private void tsmItem_Click(object sender, EventArgs e)
         {
@@ -58,6 +72,11 @@ namespace Ex1
         private void tsmAgents_Click(object sender, EventArgs e)
         {
             callManagement(1);
+        }
+
+        private void tsmAddAgents_Click(object sender, EventArgs e)
+        {
+            callManagement(2);
         }
     }
 }

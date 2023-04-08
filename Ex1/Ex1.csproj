@@ -47,6 +47,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\Agent.cs" />
+    <Compile Include="Class\Item.cs" />
+    <Compile Include="Class\Order.cs" />
+    <Compile Include="Class\OrderDetail.cs" />
+    <Compile Include="Data\Connection.cs" />
+    <Compile Include="Data\DataAgent.cs" />
+    <Compile Include="Data\DataItem.cs" />
+    <Compile Include="Data\DataOder.cs" />
+    <Compile Include="Data\DataODetail.cs" />
     <Compile Include="frmManagement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +74,10 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mid\MidAgent.cs" />
+    <Compile Include="Mid\MidItem.cs" />
+    <Compile Include="Mid\MidOder.cs" />
+    <Compile Include="Mid\MidODetail.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmManagement.resx">
@@ -114,5 +127,6 @@
   <ItemGroup>
     <None Include="Resources\pexels-eberhard-grossgasteiger-2310713.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

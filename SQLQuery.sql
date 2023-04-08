@@ -88,7 +88,7 @@ INSERT INTO Agent VALUES
 GO
 INSERT INTO [Order] (OrderID, OrderDate, AgentID)
 VALUES
-  ('OD0001', '2023-04-06', 'A0001'),
+  ('OD001', '2023-04-06', 'A0001'),
   ('OD0002', '2023-04-06', 'A0014'),
   ('OD0003', '2023-04-08', 'A0011'),
   ('OD0004', '2023-04-06', 'A0011'),

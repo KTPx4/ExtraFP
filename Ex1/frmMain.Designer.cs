@@ -49,7 +49,7 @@
             this.tsmItem,
             this.tsmAgents});
             this.itemToolStripMenuItem.Name = "itemToolStripMenuItem";
-            this.itemToolStripMenuItem.Size = new System.Drawing.Size(106, 29);
+            this.itemToolStripMenuItem.Size = new System.Drawing.Size(106, 50);
             this.itemToolStripMenuItem.Text = "Managers";
             // 
             // tsmItem
@@ -71,7 +71,7 @@
             this.agentsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmAddAgents});
             this.agentsToolStripMenuItem.Name = "agentsToolStripMenuItem";
-            this.agentsToolStripMenuItem.Size = new System.Drawing.Size(84, 29);
+            this.agentsToolStripMenuItem.Size = new System.Drawing.Size(84, 50);
             this.agentsToolStripMenuItem.Text = "Agents";
             // 
             // tsmAddAgents
@@ -79,6 +79,7 @@
             this.tsmAddAgents.Name = "tsmAddAgents";
             this.tsmAddAgents.Size = new System.Drawing.Size(270, 34);
             this.tsmAddAgents.Text = "Order Item";
+            this.tsmAddAgents.Click += new System.EventHandler(this.tsmAddAgents_Click);
             // 
             // searchToolStripMenuItem
             // 
@@ -87,25 +88,25 @@
             this.agentsToolStripMenuItem1,
             this.orderDetailsToolStripMenuItem});
             this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
-            this.searchToolStripMenuItem.Size = new System.Drawing.Size(80, 29);
+            this.searchToolStripMenuItem.Size = new System.Drawing.Size(80, 50);
             this.searchToolStripMenuItem.Text = "Search";
             // 
             // itemsToolStripMenuItem
             // 
             this.itemsToolStripMenuItem.Name = "itemsToolStripMenuItem";
-            this.itemsToolStripMenuItem.Size = new System.Drawing.Size(218, 34);
+            this.itemsToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.itemsToolStripMenuItem.Text = "Items";
             // 
             // agentsToolStripMenuItem1
             // 
             this.agentsToolStripMenuItem1.Name = "agentsToolStripMenuItem1";
-            this.agentsToolStripMenuItem1.Size = new System.Drawing.Size(218, 34);
+            this.agentsToolStripMenuItem1.Size = new System.Drawing.Size(270, 34);
             this.agentsToolStripMenuItem1.Text = "Agents";
             // 
             // orderDetailsToolStripMenuItem
             // 
             this.orderDetailsToolStripMenuItem.Name = "orderDetailsToolStripMenuItem";
-            this.orderDetailsToolStripMenuItem.Size = new System.Drawing.Size(218, 34);
+            this.orderDetailsToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.orderDetailsToolStripMenuItem.Text = "Order Details";
             // 
             // toolToolStripMenuItem
@@ -113,13 +114,13 @@
             this.toolToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.reportToolStripMenuItem});
             this.toolToolStripMenuItem.Name = "toolToolStripMenuItem";
-            this.toolToolStripMenuItem.Size = new System.Drawing.Size(61, 29);
+            this.toolToolStripMenuItem.Size = new System.Drawing.Size(61, 50);
             this.toolToolStripMenuItem.Text = "Tool";
             // 
             // reportToolStripMenuItem
             // 
             this.reportToolStripMenuItem.Name = "reportToolStripMenuItem";
-            this.reportToolStripMenuItem.Size = new System.Drawing.Size(223, 34);
+            this.reportToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.reportToolStripMenuItem.Text = "Export Report";
             // 
             // menuStrip1
@@ -134,7 +135,7 @@
             this.toolToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1049, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(1574, 54);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
