@@ -3,3 +3,10 @@
 	[Order] : tạo 1 Data rows 
 			
 	[OrderDetail]: Nhiều data rows dựa theo số lượng item đã add, (chung một mã Order)
+
+1 item  cho 1 order detail - (nhiều order detail cho nhiều item khác nhau) (1- 1)
+1 order cho nhiều order detail (1- n) : chỉ có 1 rows cho order, nhưng nhiều order detail sẽ link tới mã Order
+Khi nhấn save sẽ tạo ra 
+	+ 1 order: mã AgentID - Ngày tạo Date - Mã OrderID
+	+ nhiều orderDetail: mỗi orderdetail là một item: IDOrderDetail, OrderID (ở trên đã tạo), ItemID , Quantity , UnitAmount 
+		-> dựa vào listItem mà tạo OrderDetail: (list Item chứa: IDitem) 

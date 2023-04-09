@@ -27,6 +27,10 @@ namespace Ex1.Mid
         {
             ag.addAgent();
         }
+        public void editAgent()
+        {
+            ag.editAgent();
+        }
         public void deleteAgent()
         {
             ag.deleteAgent();

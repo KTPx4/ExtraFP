@@ -19,7 +19,7 @@ namespace Ex1.Class
         public string ItemName { get; set; }
         public string ItemSize { get; set; }
         public string ItemType { get; set; }
-        public string ItemProDate { get; set; }
+    
         public string ItemCountry { get; set; }
 
         public Item()
@@ -28,7 +28,7 @@ namespace Ex1.Class
             this.ItemName = "";
             this.ItemSize = "";
             this.ItemType = "";
-            this.ItemProDate = "2003/09/28";
+       
             this.ItemCountry = "";
         }
         public Item(string id)
@@ -37,16 +37,16 @@ namespace Ex1.Class
             this.ItemName = "";
             this.ItemSize = "";
             this.ItemType = "";
-            this.ItemProDate = "2003/09/28";
+         
             this.ItemCountry = "";
         }
-        public Item(string ID, string Name, string size, string type, string date, string country)
+        public Item(string ID, string Name, string size, string type, string country)
         {
             this.ItemID = ID;
             this.ItemName = Name;
             this.ItemSize = size;
             this.ItemType = type;
-            this.ItemProDate = date;
+         
             this.ItemCountry = country;
         }
     }

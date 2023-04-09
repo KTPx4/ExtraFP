@@ -19,9 +19,9 @@ namespace Ex1.Mid
         {
             p = new DataItem(id);
         }
-        public MidItem(string ID, string Name, string size, string type, string date, string country)
+        public MidItem(string ID, string Name, string size, string type,  string country)
         {
-            p = new DataItem(ID, Name, size, type, date, country);
+            p = new DataItem(ID, Name, size, type,  country);
         }
 
         public string getID()
@@ -69,6 +69,10 @@ namespace Ex1.Mid
         {
             p.deleteItem();
         }
+        public void editItem()
+        {
+            p.editItem();
+        }
         public DataTable selectItems()
         {
             return p.selectItems();
@@ -77,6 +81,13 @@ namespace Ex1.Mid
         {
             return p.selectItem();
         }
-       
+        public DataTable selectTop(string top)
+        {
+            return p.selectTop(top);
+        }
+        public DataTable select(string query)
+        {
+            return p.select(query);
+        }
     }
 }

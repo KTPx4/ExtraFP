@@ -1,5 +1,6 @@
 ﻿using Ex1.Class;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -30,6 +31,11 @@ namespace Ex1.Data
         {
             string query = "delete from Agent where AgentID ='" + Ag.AgentID + "'";
             Connection.actionQuery(query);
+        }
+        public void editAgent()
+        {
+            string s = "update Agent set AgentName ='" + Ag.AgentName + "', Address= '"+ Ag.AgentAddr+ "' where AgentID = '"+ Ag.AgentID+"'";
+            Connection.actionQuery(s);
         }
         public DataTable selectAgents()
         {

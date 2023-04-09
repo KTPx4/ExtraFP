@@ -78,5 +78,10 @@ namespace Ex1
         {
             callManagement(2);
         }
+
+        private void itemsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            callManagement(3);
+        }
     }
 }

@@ -3,8 +3,10 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Ex1.Data
 {
@@ -20,14 +22,19 @@ namespace Ex1.Data
         {
             it = new Item(id);
         }
-        public DataItem(string ID, string Name, string size, string type, string date, string country) 
+        public DataItem(string ID, string Name, string size, string type,  string country) 
         { 
-            it = new Item(ID, Name, size, type, date, country);
+            it = new Item(ID, Name, size, type,  country);
         }
 
         public void addItem()
         {
-            string query = "insert into Item values('" + it.ItemID +"', '" + it.ItemName + "', '" +it.ItemSize+"', '" +it.ItemType+ "','" + it.ItemProDate +"', '" + it.ItemCountry + "')";
+            string query = "insert into Item values('" + it.ItemID +"', '" + it.ItemName + "', '" +it.ItemSize+"', '" +it.ItemType+ "','" + it.ItemCountry + "')";
+            Connection.actionQuery(query);
+        }
+        public void editItem()
+        {
+            string query = "update Item set ItemName = '" + it.ItemName +"', Size ='"+it.ItemSize+"', type ='"+it.ItemType+"', country ='"+it.ItemCountry+"' where ItemID = '" + it.ItemID+"'";
             Connection.actionQuery(query);
         }
         public void deleteItem()
@@ -50,6 +57,14 @@ namespace Ex1.Data
             string s = "select top 1 ItemID from Item order by ItemID desc";
             return Connection.selectQuery(s);
         }
-
+        public DataTable selectTop(string top)
+        {
+            string s = "SELECT TOP "+top+" Item.ItemID as 'Item ID', Item.ItemName as 'Item Name', COUNT(*) AS 'Total Orders' FROM OrderDetail JOIN Item ON OrderDetail.ItemID = Item.ItemID GROUP BY Item.ItemID, Item.ItemName ORDER BY 'Total Orders' DESC";
+            return Connection.selectQuery(s);
+        }
+        public DataTable select(string query)
+        {
+            return Connection.selectQuery(query);
+        }
     }
 }
