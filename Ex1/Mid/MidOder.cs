@@ -57,14 +57,22 @@ namespace Ex1.Mid
             return lastID;
         }
 
-        public void addOrder()
+        public int addOrder()
         {
+            DataTable tb = od.selectOder();
+            if(tb.Rows.Count > 0)
+            {
+                return 0;
+            }
             od.addOrder();
+            return 1;
         }
+
         public void deleteOrder()
         {
             od.deleteOrder();
         }
+
         public DataTable selectOders()
         {
             return od.selectOders();

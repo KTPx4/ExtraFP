@@ -42,9 +42,7 @@
             this.txtSNameA = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.txtSNameI = new System.Windows.Forms.TextBox();
-            this.txtSIDI = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.tabOrder = new System.Windows.Forms.TabPage();
             this.txtODDAgent = new System.Windows.Forms.TextBox();
             this.txtODDunit = new System.Windows.Forms.TextBox();
@@ -91,9 +89,9 @@
             // grbData
             // 
             this.grbData.Controls.Add(this.dgvInfo);
-            this.grbData.Location = new System.Drawing.Point(31, 303);
+            this.grbData.Location = new System.Drawing.Point(32, 286);
             this.grbData.Name = "grbData";
-            this.grbData.Size = new System.Drawing.Size(975, 385);
+            this.grbData.Size = new System.Drawing.Size(974, 385);
             this.grbData.TabIndex = 4;
             this.grbData.TabStop = false;
             this.grbData.Text = "Data";
@@ -112,7 +110,7 @@
             this.dgvInfo.RowHeadersVisible = false;
             this.dgvInfo.RowHeadersWidth = 62;
             this.dgvInfo.RowTemplate.Height = 28;
-            this.dgvInfo.Size = new System.Drawing.Size(963, 347);
+            this.dgvInfo.Size = new System.Drawing.Size(963, 354);
             this.dgvInfo.TabIndex = 0;
             this.dgvInfo.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInfo_CellClick);
             // 
@@ -123,9 +121,9 @@
             this.grbControl.Controls.Add(this.btnRemove);
             this.grbControl.Controls.Add(this.btnSave);
             this.grbControl.Controls.Add(this.btnEdit);
-            this.grbControl.Location = new System.Drawing.Point(34, 218);
+            this.grbControl.Location = new System.Drawing.Point(32, 201);
             this.grbControl.Name = "grbControl";
-            this.grbControl.Size = new System.Drawing.Size(972, 79);
+            this.grbControl.Size = new System.Drawing.Size(974, 79);
             this.grbControl.TabIndex = 5;
             this.grbControl.TabStop = false;
             this.grbControl.Text = "Control";
@@ -187,13 +185,11 @@
             this.tabSearch.Controls.Add(this.txtSNameA);
             this.tabSearch.Controls.Add(this.label16);
             this.tabSearch.Controls.Add(this.txtSNameI);
-            this.tabSearch.Controls.Add(this.txtSIDI);
             this.tabSearch.Controls.Add(this.label4);
-            this.tabSearch.Controls.Add(this.label13);
             this.tabSearch.Location = new System.Drawing.Point(4, 29);
             this.tabSearch.Name = "tabSearch";
             this.tabSearch.Padding = new System.Windows.Forms.Padding(3);
-            this.tabSearch.Size = new System.Drawing.Size(961, 140);
+            this.tabSearch.Size = new System.Drawing.Size(966, 140);
             this.tabSearch.TabIndex = 3;
             this.tabSearch.Text = "Search";
             this.tabSearch.UseVisualStyleBackColor = true;
@@ -201,11 +197,11 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(310, 95);
+            this.label17.Location = new System.Drawing.Point(286, 92);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(36, 20);
+            this.label17.Size = new System.Drawing.Size(80, 20);
             this.label17.TabIndex = 15;
-            this.label17.Text = "Top";
+            this.label17.Text = "Top Items";
             // 
             // cbbTop
             // 
@@ -223,16 +219,17 @@
             // 
             // txtSNameA
             // 
-            this.txtSNameA.Location = new System.Drawing.Point(755, 15);
+            this.txtSNameA.Location = new System.Drawing.Point(634, 27);
             this.txtSNameA.Multiline = true;
             this.txtSNameA.Name = "txtSNameA";
             this.txtSNameA.Size = new System.Drawing.Size(172, 30);
             this.txtSNameA.TabIndex = 13;
+            this.txtSNameA.TextChanged += new System.EventHandler(this.txt_TextChanged);
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(644, 22);
+            this.label16.Location = new System.Drawing.Point(523, 34);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(98, 20);
             this.label16.TabIndex = 12;
@@ -240,38 +237,21 @@
             // 
             // txtSNameI
             // 
-            this.txtSNameI.Location = new System.Drawing.Point(386, 15);
+            this.txtSNameI.Location = new System.Drawing.Point(265, 27);
             this.txtSNameI.Multiline = true;
             this.txtSNameI.Name = "txtSNameI";
             this.txtSNameI.Size = new System.Drawing.Size(199, 30);
             this.txtSNameI.TabIndex = 11;
-            // 
-            // txtSIDI
-            // 
-            this.txtSIDI.Location = new System.Drawing.Point(77, 15);
-            this.txtSIDI.Multiline = true;
-            this.txtSIDI.Name = "txtSIDI";
-            this.txtSIDI.Size = new System.Drawing.Size(175, 30);
-            this.txtSIDI.TabIndex = 9;
-            this.txtSIDI.TextChanged += new System.EventHandler(this.txtSIDI_TextChanged);
+            this.txtSNameI.TextChanged += new System.EventHandler(this.txt_TextChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(311, 22);
+            this.label4.Location = new System.Drawing.Point(158, 34);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 20);
+            this.label4.Size = new System.Drawing.Size(91, 20);
             this.label4.TabIndex = 10;
-            this.label4.Text = "Name";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(36, 22);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(26, 20);
-            this.label13.TabIndex = 8;
-            this.label13.Text = "ID";
+            this.label4.Text = " Name Item";
             // 
             // tabOrder
             // 
@@ -596,10 +576,10 @@
             this.tabMana.Controls.Add(this.tabAgents);
             this.tabMana.Controls.Add(this.tabOrder);
             this.tabMana.Controls.Add(this.tabSearch);
-            this.tabMana.Location = new System.Drawing.Point(37, 39);
+            this.tabMana.Location = new System.Drawing.Point(32, 22);
             this.tabMana.Name = "tabMana";
             this.tabMana.SelectedIndex = 0;
-            this.tabMana.Size = new System.Drawing.Size(969, 173);
+            this.tabMana.Size = new System.Drawing.Size(974, 173);
             this.tabMana.TabIndex = 3;
             // 
             // frmManagement
@@ -608,7 +588,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1058, 733);
+            this.ClientSize = new System.Drawing.Size(1058, 698);
             this.ControlBox = false;
             this.Controls.Add(this.grbControl);
             this.Controls.Add(this.grbData);
@@ -648,9 +628,7 @@
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.TabPage tabSearch;
         private System.Windows.Forms.TextBox txtSNameI;
-        private System.Windows.Forms.TextBox txtSIDI;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TabPage tabOrder;
         private System.Windows.Forms.TextBox txtODDAgent;
         private System.Windows.Forms.TextBox txtODDunit;

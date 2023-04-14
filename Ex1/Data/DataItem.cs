@@ -59,7 +59,10 @@ namespace Ex1.Data
         }
         public DataTable selectTop(string top)
         {
-            string s = "SELECT TOP "+top+" Item.ItemID as 'Item ID', Item.ItemName as 'Item Name', COUNT(*) AS 'Total Orders' FROM OrderDetail JOIN Item ON OrderDetail.ItemID = Item.ItemID GROUP BY Item.ItemID, Item.ItemName ORDER BY 'Total Orders' DESC";
+            string s = "SELECT TOP " +top+ " Item.ItemID as 'Item ID', Item.ItemName as 'Item Name', SUM(OrderDetail.Quantity) AS 'Total Quantity'" +
+                        " FROM Item JOIN OrderDetail ON Item.ItemID = OrderDetail.ItemID" +
+                        " GROUP BY Item.ItemID, Item.ItemName" +
+                        " ORDER BY 'Total Quantity' DESC";
             return Connection.selectQuery(s);
         }
         public DataTable select(string query)

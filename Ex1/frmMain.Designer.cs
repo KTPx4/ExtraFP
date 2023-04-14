@@ -37,6 +37,10 @@
             this.itemsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exportIemsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.agentsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ordersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.orderDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -90,7 +94,7 @@
             // itemsToolStripMenuItem
             // 
             this.itemsToolStripMenuItem.Name = "itemsToolStripMenuItem";
-            this.itemsToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.itemsToolStripMenuItem.Size = new System.Drawing.Size(158, 34);
             this.itemsToolStripMenuItem.Text = "Items";
             this.itemsToolStripMenuItem.Click += new System.EventHandler(this.itemsToolStripMenuItem_Click);
             // 
@@ -104,9 +108,42 @@
             // 
             // reportToolStripMenuItem
             // 
+            this.reportToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.exportIemsToolStripMenuItem,
+            this.agentsToolStripMenuItem1,
+            this.ordersToolStripMenuItem,
+            this.orderDetailsToolStripMenuItem});
             this.reportToolStripMenuItem.Name = "reportToolStripMenuItem";
-            this.reportToolStripMenuItem.Size = new System.Drawing.Size(223, 34);
+            this.reportToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.reportToolStripMenuItem.Text = "Export Report";
+            // 
+            // exportIemsToolStripMenuItem
+            // 
+            this.exportIemsToolStripMenuItem.Name = "exportIemsToolStripMenuItem";
+            this.exportIemsToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.exportIemsToolStripMenuItem.Text = "Iems";
+            this.exportIemsToolStripMenuItem.Click += new System.EventHandler(this.exportIemsToolStripMenuItem_Click);
+            // 
+            // agentsToolStripMenuItem1
+            // 
+            this.agentsToolStripMenuItem1.Name = "agentsToolStripMenuItem1";
+            this.agentsToolStripMenuItem1.Size = new System.Drawing.Size(270, 34);
+            this.agentsToolStripMenuItem1.Text = "Agents";
+            this.agentsToolStripMenuItem1.Click += new System.EventHandler(this.agentsToolStripMenuItem1_Click);
+            // 
+            // ordersToolStripMenuItem
+            // 
+            this.ordersToolStripMenuItem.Name = "ordersToolStripMenuItem";
+            this.ordersToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.ordersToolStripMenuItem.Text = "Orders";
+            this.ordersToolStripMenuItem.Click += new System.EventHandler(this.ordersToolStripMenuItem_Click);
+            // 
+            // orderDetailsToolStripMenuItem
+            // 
+            this.orderDetailsToolStripMenuItem.Name = "orderDetailsToolStripMenuItem";
+            this.orderDetailsToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.orderDetailsToolStripMenuItem.Text = "Order Details";
+            this.orderDetailsToolStripMenuItem.Click += new System.EventHandler(this.orderDetailsToolStripMenuItem_Click);
             // 
             // menuStrip1
             // 
@@ -159,6 +196,10 @@
         private System.Windows.Forms.ToolStripMenuItem toolToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reportToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem exportIemsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem agentsToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem ordersToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem orderDetailsToolStripMenuItem;
     }
 }
 

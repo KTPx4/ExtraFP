@@ -170,7 +170,7 @@
             this.Controls.Add(this.txtUser);
             this.Controls.Add(this.ptbUser);
             this.Controls.Add(this.ptbLogin);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -173,4 +173,12 @@ SELECT TOP 10 Item.ItemID as 'Item ID', Item.ItemName as 'Item Name', Agent.Agen
                 JOIN[Order] ON OrderDetail.OrderID = [Order].OrderID 
                 JOIN Agent ON[Order].AgentID = Agent.AgentID 
                 GROUP BY Item.ItemID, Item.ItemName, Agent.AgentName 
-                ORDER BY 'Total Orders' DESC; */
+                ORDER BY 'Total Orders' DESC; 
+
+
+SELECT TOP 10 Item.ItemID as 'Item ID', Item.ItemName as 'Item Name', SUM(OrderDetail.Quantity) AS 'Total Quantity'
+FROM Item
+JOIN OrderDetail ON Item.ItemID = OrderDetail.ItemID
+GROUP BY Item.ItemID, Item.ItemName
+ORDER BY 'Total Quantity' DESC
+*/

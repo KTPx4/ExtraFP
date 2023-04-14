@@ -19,30 +19,55 @@ namespace Ex1.Mid
         {
             ag = new DataAgent();
         }
+        
         public MidAgent(string id, string name, string addr)
         {
             ag = new DataAgent(id, name, addr);
         }
-        public void addAgent()
+        
+        public int addAgent()
         {
+            DataTable tb = ag.selectAgent();
+            if(tb.Rows.Count > 0) // exists data with id agents 
+            {
+                return 0;
+            }
             ag.addAgent();
+            return 1;
         }
-        public void editAgent()
+       
+        public int editAgent()
         {
+            DataTable tb = ag.selectAgent();
+            if (tb.Rows.Count == 0) // not exists data to edit
+            {
+                return 0;
+            }
             ag.editAgent();
+            return 1;
         }
-        public void deleteAgent()
+        
+        public int deleteAgent()
         {
+            DataTable tb = ag.selectAgent();
+            if (tb.Rows.Count == 0) // not exists data to delete
+            {
+                return 0;
+            }
             ag.deleteAgent();
+            return 1;
         }
+        
         public DataTable selectAgents()
         {
            return ag.selectAgents();
         }
+        
         public DataTable selectAgent()
         {
             return ag.selectAgent();
         }
+        
         public string getID()
         {
             DataTable tb = ag.selectTop();

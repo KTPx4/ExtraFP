@@ -23,3 +23,7 @@ D:\Px4_TDTU\TDTU\2HK2\CNPM\LT\QT1\ExtraFP\Ex1\obj\Debug\Ex1.csproj.CoreCompileIn
 D:\Px4_TDTU\TDTU\2HK2\CNPM\LT\QT1\ExtraFP\Ex1\obj\Debug\Ex1.exe
 D:\Px4_TDTU\TDTU\2HK2\CNPM\LT\QT1\ExtraFP\Ex1\obj\Debug\Ex1.pdb
 D:\Px4_TDTU\TDTU\2HK2\CNPM\LT\QT1\ExtraFP\Ex1\obj\Debug\Ex1.frmManagement.resources
+D:\Px4_TDTU\TDTU\2HK2\CNPM\LT\QT1\ExtraFP\Ex1\bin\Debug\BouncyCastle.Crypto.dll
+D:\Px4_TDTU\TDTU\2HK2\CNPM\LT\QT1\ExtraFP\Ex1\bin\Debug\itextsharp.dll
+D:\Px4_TDTU\TDTU\2HK2\CNPM\LT\QT1\ExtraFP\Ex1\bin\Debug\itextsharp.xml
+D:\Px4_TDTU\TDTU\2HK2\CNPM\LT\QT1\ExtraFP\Ex1\obj\Debug\Ex1.csproj.CopyComplete

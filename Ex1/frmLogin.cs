@@ -173,5 +173,12 @@ namespace Ex1
 
 
         }
+
+    
+
+        private void txtUser_KeyPress(object sender, DragEventArgs e)
+        {
+            txtPass.Focus();
+        }
     }
 }

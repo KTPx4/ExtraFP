@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Ex1.Mid
 {
@@ -61,30 +62,55 @@ namespace Ex1.Mid
             }
             return lastID;
         }
-        public void addItem()
+        
+        public int addItem()
         {
+            DataTable tb = p.selectItem();
+            if(tb.Rows.Count > 0 ) 
+            {
+                return 0;
+            }
             p.addItem();
+            return 1;
         }
-        public void deleteItem()
+        
+        public int deleteItem()
         {
+            DataTable tb = p.selectItem();
+            if (tb.Rows.Count == 0)
+            {               
+                return 0;
+            }
             p.deleteItem();
+            return 1;
         }
-        public void editItem()
+        
+        public int editItem()
         {
+            DataTable tb = p.selectItem();
+            if (tb.Rows.Count == 0)
+            {               
+                return 0;
+            }
             p.editItem();
+            return 1;
         }
+
         public DataTable selectItems()
         {
             return p.selectItems();
         }
+        
         public DataTable selectItem()
         {
             return p.selectItem();
         }
+        
         public DataTable selectTop(string top)
         {
             return p.selectTop(top);
         }
+        
         public DataTable select(string query)
         {
             return p.select(query);
