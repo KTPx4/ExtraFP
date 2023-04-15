@@ -11,7 +11,7 @@ namespace Ex1.Data
     public class DataOder
     {
         private Order Od;
-
+        private Connection cn = new Connection();
         public DataOder()
         {
             Od = new Order();

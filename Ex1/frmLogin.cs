@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Ex1.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,10 +15,7 @@ namespace Ex1
 {
     public partial class frmLogin : Form
     {
-        SqlConnection cn;
-        SqlDataAdapter data;
-        SqlCommand cm;
-        DataTable tb;
+        Connection cn;
         int timeCheck = 0;
         public frmLogin()
         {
@@ -26,8 +24,7 @@ namespace Ex1
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
-            cn = new SqlConnection(Program.strConn);
-            cn.Open();
+            cn = new Connection();
 
             Style();
             // txtUser.Focus();
@@ -128,9 +125,9 @@ namespace Ex1
         void Login()
         {
             string s = "select NameUser from USERLOGIN where UserID ='" + txtUser.Text + "' and PassID ='" + txtPass.Text + "'";
-            data = new SqlDataAdapter(s, cn);
-            tb = new DataTable();
-            data.Fill(tb);
+
+            DataTable tb = Connection.selectQuery(s);
+          
             if (tb.Rows.Count <= 0)
             {
                 MessageBox.Show("Invalid Account!");

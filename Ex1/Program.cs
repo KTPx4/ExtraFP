@@ -13,7 +13,7 @@ namespace Ex1
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
-        public static String strConn = ConfigurationManager.ConnectionStrings["MyConnect"].ConnectionString;
+        /*public static String strConn = ConfigurationManager.ConnectionStrings["MyConnect"].ConnectionString;
         public static bool readServer()
         {
             string path = "server.txt";
@@ -24,7 +24,7 @@ namespace Ex1
 
             string text = File.ReadAllText(path);
             string[] arr = text.Split('|');
-            if(arr.Length != 2 )
+            if (arr.Length != 2)
             {
                 return false;
             }
@@ -34,15 +34,15 @@ namespace Ex1
             strConn = strConn.Replace("(local)", serverName);
             strConn = strConn.Replace("(db)", dbName);
             return true;
-        }
+        }*/
         [STAThread]
         static void Main()
         {
-            if(!readServer())
-            {
-                MessageBox.Show("Can not find 'server.txt', please create");
-                Environment.Exit(0);
-            }
+            //if(!readServer())
+            //{
+            //    MessageBox.Show("Can not find 'server.txt', please create");
+            //    Environment.Exit(0);
+            //}
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmLogin());

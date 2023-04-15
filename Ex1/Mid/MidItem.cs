@@ -81,6 +81,7 @@ namespace Ex1.Mid
             {               
                 return 0;
             }
+          
             p.deleteItem();
             return 1;
         }

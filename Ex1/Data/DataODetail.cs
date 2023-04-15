@@ -11,7 +11,7 @@ namespace Ex1.Data
     public class DataODetail
     {
         private OrderDetail odd;
-
+        private Connection cn = new Connection();
         public DataODetail()
         {
             odd = new OrderDetail();

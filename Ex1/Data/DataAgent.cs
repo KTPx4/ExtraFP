@@ -12,7 +12,7 @@ namespace Ex1.Data
     public class DataAgent
     {
         private Agent Ag;
-
+        private Connection cn = new Connection();
         public DataAgent()
         {
             Ag = new Agent();

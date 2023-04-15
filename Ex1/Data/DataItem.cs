@@ -13,7 +13,7 @@ namespace Ex1.Data
     public class DataItem
     {
         private Item it;
-
+        private Connection cn = new Connection();
         public DataItem() 
         {
             it = new Item();
@@ -39,6 +39,9 @@ namespace Ex1.Data
         }
         public void deleteItem()
         {
+            string s = "DELETE FROM OrderDetail WHERE ItemID= '" + it.ItemID +"'";
+            Connection.actionQuery(s);
+
             string query = "delete from Item where ItemID ='" + it.ItemID + "'";
             Connection.actionQuery(query);
         }

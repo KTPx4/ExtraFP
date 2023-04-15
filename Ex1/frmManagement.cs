@@ -534,10 +534,12 @@ namespace Ex1
             }
 
         }
+        
         private void showDGV(DataTable s)
         {
             dgvInfo.DataSource = s;
         }
+       
         public void showTab(int tab)
         {
             grbControl.Show();
@@ -607,6 +609,7 @@ namespace Ex1
 
 
         }
+        
         void addListItem()
         {
             ListItem = new DataTable();
@@ -615,6 +618,7 @@ namespace Ex1
             ListItem.Columns.Add("Country", typeof(string));
             ListItem.Columns.Add("Quantity", typeof(int));
         }
+
 
         void blockTxtItem(bool b)
         {
@@ -625,18 +629,21 @@ namespace Ex1
 
             txtItemCountry.Enabled = b;
         }
+
         void blockTxtAgent(bool b)
         {
             txtAgentID.Enabled = b;
             txtAgentName.Enabled = b;
             txtAgentAddress.Enabled = b;
         }
+
         void blockControl(bool b)
         {
             btnEdit.Enabled = b;
             btnSave.Enabled = b;
             btnRemove.Enabled = b;
         }
+
         void blockTxtO(bool b)
         {
             // txtODDID.Enabled = b;
@@ -645,6 +652,7 @@ namespace Ex1
             txtODDunit.Enabled = b;
             txtODDAgent.Enabled = b;
         }
+
        
         void clearTxtItem()
         {
@@ -655,12 +663,14 @@ namespace Ex1
 
             txtItemCountry.Text = "";
         }
+
         void clearTxtAgent()
         {
             txtAgentID.Text = "";
             txtAgentName.Text = "";
             txtAgentAddress.Text = "";
         }
+
         void clearTxtO()
         {
             // txtODDID.Text = "";
@@ -669,6 +679,7 @@ namespace Ex1
             txtODDunit.Text = "";
             txtODDAgent.Text = "";
         }
+        
         void cleartxtSearch()
         {
             //txtSIDI.Text = "";
