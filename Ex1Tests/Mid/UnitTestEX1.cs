@@ -70,7 +70,7 @@ namespace Ex1.Mid.Tests
 
             createBackup(); // create backup for database
 
-            foreach (DataRow row in lTestCase.Rows)
+            foreach (DataRow row in lTestCase.Rows) // test each rows in test case
             {
                 int expected = int.Parse(row[1].ToString());
 

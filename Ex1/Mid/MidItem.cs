@@ -68,7 +68,7 @@ namespace Ex1.Mid
             DataTable tb = p.selectItem();
             if(tb.Rows.Count > 0 ) 
             {
-                return 0;
+                return 0; // exists ID in db 
             }
             p.addItem();
             return 1;
@@ -79,7 +79,7 @@ namespace Ex1.Mid
             DataTable tb = p.selectItem();
             if (tb.Rows.Count == 0)
             {               
-                return 0;
+                return 0;// not exists ID in db 
             }
           
             p.deleteItem();
@@ -91,7 +91,7 @@ namespace Ex1.Mid
             DataTable tb = p.selectItem();
             if (tb.Rows.Count == 0)
             {               
-                return 0;
+                return 0;// not exists ID in db 
             }
             p.editItem();
             return 1;
